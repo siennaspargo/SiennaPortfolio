@@ -15,6 +15,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   color: #777;
+  text-align: left;
 }
 
 p {
@@ -40,19 +41,9 @@ nav {
   clear: both;
 }
 
-/* header */
-
-/* this header is commented out because it cuts off the body of the page and i CANNOT figure out why !YET! */
-/* it DOES create a header, but.... */
-/* header {
-  position: fixed;
-  z-index: 99;
-  width: 100%;
-  margin: 0 0 30px;
-  overflow: auto;
-  color: #fff;
-  border-bottom: 2px solid #ccc;
-} */
+.portfolioItems {
+  
+}
 
 #name {
   float: left;
@@ -284,7 +275,7 @@ form button {
 
 #left-column {
   width: 650px;
-  float: left;
+  float: center;
 }
 
 #left-column h2 {
