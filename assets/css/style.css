@@ -1,0 +1,500 @@
+/* EDIT : header, wrapper,  h2 */
+
+/* gives a header break line on each page */
+header {
+  margin: 0 0 25px 0;
+  border-bottom: 2px solid;
+  background: white;
+  background-image: url("../images/full-bloom.png");
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../images/full-bloom.png");
+  overflow: auto;
+  font-size: 20px;
+  line-height: 36px;
+  color: #777;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  color: #777;
+}
+
+/* Floats nav bar to the right of the webpage */
+nav {
+  float:right;
+  display:inline;
+  width: 400px;
+  padding: 15px;
+  text-align: right;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
+}
+
+/* header */
+
+/* this header is commented out because it cuts off the body of the page and i CANNOT figure out why !YET! */
+/* it DOES create a header, but.... */
+/* header {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  margin: 0 0 30px;
+  overflow: auto;
+  color: #fff;
+  border-bottom: 2px solid #ccc;
+} */
+
+#name {
+  float: left;
+  width: 250px;
+  height: 90px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background: #4aaaa5;
+}
+
+nav {
+  float: right;
+  margin-top: 25px;
+}
+
+nav a {
+  display: inline-block;
+  padding-left: 15px;
+  margin-left: 15px;
+  line-height: 18px;
+  color: #999;
+  text-decoration: none;
+  border-left: 1px solid #efefef;
+}
+
+nav a:first-child {
+  border-left: 0 none;
+}
+
+
+/* Styling for each h tag plus positioning, font which doesn't work?*/
+
+ h2, h3, h4, h5, h6 {
+  background:white;
+  color: black;
+  padding: 25px 35px;
+  display: inline-block;
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+
+/* Gives img a rounded border as well as inline block positioning */
+img {
+  display: inline-block;
+  border-radius: 8px;
+}
+
+/* Flips the images being hovered over it  */
+img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+
+
+/* Gives font size to p element on homepage */
+p {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+
+/* Positions the connect with me element aside the profile/paragraph section to the right side */
+section {
+  width: 600px;
+  float: left;
+  padding: 20px;
+  background: white;
+  /* text-align: center; */
+}
+
+/* Positions the contact me linkedin, stackOverFlow, Github icon links under the Connect with me */
+aside {
+  width: 316px;
+  float: right;
+  background: white;
+  padding: 30px;
+}
+
+/* connect with me links */
+.exlinks {
+  width: 62px;
+  height: 62px;
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
+.exlinks:last-child {
+  margin-right: 0px;
+}
+
+.sideConnect {
+  float: right;
+  width: 100%;
+  max-width: 270px;
+  margin-bottom: 20px;
+  padding: 30px;
+  background: rgb(255, 255, 255);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(221, 221, 221);
+  border-image: initial;
+}
+
+/* Centers and creates a line break for the footer with styling on each page */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  background: #666666;
+  color: white;
+  border-top: 2px solid rgb(82, 214, 214);
+  padding: 40px;
+}
+
+/* Makes homepage profile image inline to text wrapped around it */
+.inline-img {
+  float:left;
+  margin: 0 15px 15px 0;
+  height: 300px;
+  width: 250px;
+}
+
+
+/* Centers the body of the p element and the profile photo on the homepage */
+/* Centers the container of the portfolio images and links on the portfolio page */
+/* Centers the Contact me box on the contact page */
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* Creates the vertical line break separaters between the nav bar links with effects */
+nav a {
+  color: #333;
+  font-size: 18px;
+  padding: 5px 15px;
+  border-right: 2px solid #4aaaa5;
+  text-decoration: none;
+  transition-duration: .5s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
+
+/* Creates a fade in fade out effect of color over the nav bar buttons */
+nav a:hover {
+  background: #4aaaa5;
+  color: white;
+  border-radius: 8px;
+}
+
+
+/* For contact page: centers and stacks input/text areas one over the other */
+input, textarea {
+  width: 100%;
+  display: block;
+  margin: 5px 0 20px 0;
+  border: 2px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Creates large box for users to enter text into on contact page */
+textarea {
+  height: 300px;
+}
+
+/* Gives color/effect to submit button on contact page */
+form button {
+  background: #4aaaa5;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 18px;
+  border: none;
+}
+
+/* forces the links and images for Portfolio items to appear */
+.portfolio-item {
+  position: relative; 
+  margin-bottom: 20px;
+  width: 45%;
+  float:left;
+  height: 250px;
+}
+
+/* aligns the portfolio img links flip flop style  */
+.portfolio-item:nth-of-type(even) {
+  float: right;
+}
+
+/* Center and creates poloroid look for Portfolio Img links */
+.portfolio-item h4 {
+  background: #4aaaa4;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
+  border-radius: 8px;
+
+}
+
+.clearfix {
+  display: block;
+  clear: both; 
+  margin-bottom: 130px; 
+}
+
+/* CSS Styling for Portfolio Page */
+/* Table styling for Portfolio items to sit within */
+
+#left-column, #right-column {
+  background: white;
+  padding: 25px;
+  border: 2px solid #ccc;
+}
+
+#left-column {
+  width: 650px;
+  float: left;
+}
+
+#left-column h2 {
+  font-size: 24px;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+#right-column {
+  width: 270px;
+  float: right;
+}
+
+#right-column h3 {
+  font-size: 20px;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+#right-column ul {
+  text-align: center;
+}
+
+#right-column ul li {
+  display: inline-block;
+}
+
+#right-column ul li img {
+  width: 60px;
+  transition-timing-function: ease-in;
+  transition-duration: 1s;
+}
+
+#right-column ul li img:hover {
+  transform: rotate(360deg) scale(1.1);
+
+}
+
+/* Cover Images for Portfolio links */
+
+#port1 {
+  background: url('#');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#port2 {
+  background: url('#');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#port3 {
+  background: url('#') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#port4 {
+  background: url('#') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#port5 {
+  background: url('#') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#port6 {
+  background: url('#');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* portfolio page */
+
+.work {
+  position: relative;
+  float: left;
+  width: 274px;
+  margin: 20px 0 25px;
+  overflow: auto;
+}
+
+.work:nth-child(even) {
+  margin-right: 40px;
+}
+
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
+
+/*  Responsive Layout sizing max width */
+
+@media only screen and (max-width: 960px) {
+  body {
+      background-color: white;
+  }
+
+} 
+
+@media (max-width: 600px) {
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .container {
+    max-width: 768px;
+
+    /* Box-model */
+    padding: 0 20px;
+  }
+
+  .wrapper {
+    padding-top: 130px;
+  }
+
+  .section {
+    max-width: 420px;
+  }
+
+  .work {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .aside {
+    max-width: 100%;
+  }
+
+
+  .work {
+    /* Box-model */
+    width: 47%;
+
+    /* Positioning */
+    margin-bottom: 10px;
+  }
+
+  .work:nth-child(even) {
+    margin-right: 0;
+  }
+
+  .work:nth-child(odd) {
+    float: right;
+  }
+
+  .portfolio-item {
+    width: 50%;
+  }
+
+  .aside {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #header {
+    /* Positioning */
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  header .wrapper {
+    padding: 0;
+  }
+
+  .wrapper {
+    padding-top: 0;
+  }
+
+
+  nav {
+    /* Box-model */
+    width: 100%;
+
+    /* Positioning */
+    margin: 15px 0;
+
+    /* Typography */
+    text-align: center;
+  }
+
+  nav a {
+    /* Box-model */
+    width: 30%;
+    padding-left: 0;
+
+    /* Positioning */
+    margin-left: 0;
+  }
+}
+
