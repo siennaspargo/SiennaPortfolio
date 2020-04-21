@@ -1,2 +1,2 @@
-# updatedPortfolioweek10
-a whole rewrite of my personal portfolio
+# HTML & CSS Portfolio Wireframe
+## Rutgers Coding Bootcamp Assignment
